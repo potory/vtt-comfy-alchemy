@@ -2,5 +2,15 @@
   "id": "comfy-alchemy",
   "title": "Comfy Alchemy - An alchemy module for foundry VTT",
   "description": "A module created for introducing simple alchemy system.",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Apotory"
+    }
+  ],
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  }
 }
