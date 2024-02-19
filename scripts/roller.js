@@ -7,7 +7,7 @@ Hooks.on("init", function() {
 Hooks.on("ready", async function() {
     const data = {};
     console.log("This code runs once core initialization is ready and game data is available.");
-    const myContent = await renderTemplate("modules/myModule/templates/mainDialogue.html", data);
+    const myContent = await renderTemplate("modules/myModule/templates/mainDialogue.hbs", data);
 
     new Dialog({
         title: "My Custom Dialog Title",
