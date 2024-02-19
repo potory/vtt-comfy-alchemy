@@ -8,9 +8,11 @@
       "name": "Apotory"
     }
   ],
-  "version": "0.0.1",
   "compatibility": {
     "minimum": "10",
     "verified": "11"
-  }
+  },
+  "scripts": [
+    "scripts/roller.js"
+  ]
 }
