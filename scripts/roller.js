@@ -6,4 +6,9 @@ Hooks.on("init", function() {
 
 Hooks.on("ready", function() {
     console.log("This code runs once core initialization is ready and game data is available.");
+    const myDialog = new Dialog({
+        title: "My Dialog Title",
+        content: `My dialog content`,
+        buttons: {}
+    }).render(true);
 });
