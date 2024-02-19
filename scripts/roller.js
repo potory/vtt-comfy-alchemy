@@ -4,11 +4,14 @@ Hooks.on("init", function() {
     console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
 });
 
-Hooks.on("ready", function() {
+Hooks.on("ready", async function() {
+    const data = {};
     console.log("This code runs once core initialization is ready and game data is available.");
-    const myDialog = new Dialog({
-        title: "My Dialog Title",
-        content: `My dialog content`,
+    const myContent = await renderTemplate("modules/myModule/templates/mainDialogue.html", data);
+
+    new Dialog({
+        title: "My Custom Dialog Title",
+        content: myContent,
         buttons: {}
     }).render(true);
 });
