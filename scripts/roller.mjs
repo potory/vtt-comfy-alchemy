@@ -3,7 +3,9 @@ Hooks.once('setup', async function comfyAlchemySetup() {
     console.log(MODULE_ID, '|', `Initializing ${MODULE_ID}`);
     console.log(CONFIG.DND5E);
 
-    CONFIG.DND5E.lootTypes.ingridient = {
+    CONFIG.DND5E.lootTypes['ingridient'] = {
         label: "Ингридиент"
     };
+
+    console.log(CONFIG.DND5E);
 });
