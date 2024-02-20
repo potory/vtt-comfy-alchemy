@@ -1,6 +1,6 @@
 console.log("Hello World! This code runs immediately when the file is loaded.");
 
-Hooks.on("init", function() {
+Hooks.once("setup", function() {
     console.log(CONFIG.DND5E.lootTypes);
     CONFIG.DND5E.lootTypes.alchemy = {
         label: "Алхимический ингридиент"
