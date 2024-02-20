@@ -1,13 +1,14 @@
 console.log("Hello World! This code runs immediately when the file is loaded.");
 
-Hooks.once("setup", function() {
+Hooks.on("init", function() {
+});
+
+Hooks.on("ready", async function() {
+
     console.log(CONFIG.DND5E.lootTypes);
     CONFIG.DND5E.lootTypes.alchemy = {
         label: "Алхимический ингридиент"
     };
-});
-
-Hooks.on("ready", async function() {
 
     const data = {};
     console.log("This code runs once core initialization is ready and game data is available.");
