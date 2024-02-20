@@ -1,3 +1,5 @@
+import { DND5E } from '/dnd5e/module/config.mjs'
+
 console.log("Hello World! This code runs immediately when the file is loaded.");
 
 Hooks.on("init", function() {
@@ -5,10 +7,7 @@ Hooks.on("init", function() {
 
 Hooks.on("ready", async function() {
 
-    console.log(CONFIG.DND5E.lootTypes);
-    CONFIG.DND5E.lootTypes.alchemy = {
-        label: "Алхимический ингридиент"
-    };
+    console.log(DND5E.lootTypes);
 
     const data = {};
     console.log("This code runs once core initialization is ready and game data is available.");
