@@ -13,9 +13,6 @@
     "verified": "11"
   },
   "esmodules": [
-    "dnd5e-extender-setup.mjs"
-  ],
-  "scripts": [
-    "scripts/roller.js"
+    "scripts/roller.mjs"
   ]
 }
